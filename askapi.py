@@ -49,50 +49,50 @@ class DataCleaner:
          trash
       data.lower()
 
-# class SendToDb:
 
-#    def __init__(self):
-#       """ This function cleans data """
-#       self.data = data
+class Interface:
 
-#    def send_to_db(self):
-#       """ This function registers the data collected in a SQL Base. """
+   def __init__(self):
+      """ This function interacts with users. """
 
-#       cursor.execute(
-#          """CREATE TABLE IF NOT EXISTS categoy (
-#             id int primary key auto_increment,
-#             name varchar(150) not null unique
-#          )
-#          """
-#       cnx.close()
-#       # créer la bdd
-#       # 1 table pdt, cat, magasins
-#       # enregistrer ces données dans des tables mysql et les lier avec des clefs étrangères ou table d'associaion
+   def launchProgram(self):
+      input("1. Quel aliment souhaitez-vous remplacer? Sélectionnez le chiffre correspondant et appuyez sur Entrée:")
+         # if 1 = montrer produit 1 et un substitu, la description, un magasin ou l'acheter (le cas échéant) et un lien vers la page d'OFF
+      question = input("Voulez-vous enregistrer ce produit dans vos favoris ? Oui ou Non")
+      if question="Oui":
+         #favorites.append(product)
+      else:
+         pass
 
-#    def interface(self)
-#       """ This function interacts with users. """
-#       # 1. Quel aliment souhaitez-vous remplacer?
-#          # plsr propositions associées à un chiffre, l'utilisateur sélectionne le chiffe et appuie sur entrée
-#          # puis mm principe pour l'aliment
-#          # le pg montre un substitu, la description, un magasin ou l'acheter (le cas échéant) et un lien vers la page d'OFF
-#          # l'utilisateur peut ensuite enregistrer le résultat dans ses favoris
-#       # 2. Retrouver mes aliments substitués
-#       else:
-#          print("désolée y'a rien")
+   def favoritesProduct(self):
+      input("Voulez-vous retrouver vos aliments substitués ?")
+      else:
+         print("désolée y'a rien")
 
-# class Product:
-#    def __init__(self, code, name, store, url, category):
+class Product:
 
-#    def save_to_db()
+   def __init__(self, code, name, store, url, category):
+      pass
 
+   def save_to_db(self):
+      cursor.execute(
+         """CREATE TABLE IF NOT EXISTS categoy (
+            id int primary key auto_increment,
+            name varchar(150) not null unique
+         )
+         """
+      cnx.close()
+      # créer la bdd
+      # 1 table pdt, cat, magasins
+      # enregistrer ces données dans des tables mysql et les lier avec des clefs étrangères ou table d'associaion
 
-# class Category:
+class Category:
 
-#    def __init__(self)
+   def __init__(self)
 
-# class Store:
-#     def chercher_ptoduit()
-#  #proposer des pdt plus sains
+class Store:
+    def chercher_ptoduit()
+ #proposer des pdt plus sains
 
 
 def main():
